@@ -6,7 +6,7 @@ from os import path
 
 
 
-def drawBoundingBox(img_name, x_min, y_max, class_name):
+def draw_bounding_box(img_name, x_min, y_max, class_name):
 
     lbl_dir = r'C:\Users\AEZ\Documents\SDI\RoadCracks\Data\LungLesion\Labels'
     img_dir = r'C:\Users\AEZ\Documents\SDI\RoadCracks\Data\LungLesion\Images'
@@ -20,7 +20,8 @@ def drawBoundingBox(img_name, x_min, y_max, class_name):
     if img and lbl:
         img = cv2.imread(img_path)
         lbl = cv2.imread(lbl_path) 
-    
+    else:
+        continue
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     lbl_rgb = cv2.cvtColor(lbl, cv2.COLOR_BGR2RGB)
 
@@ -46,4 +47,4 @@ def drawBoundingBox(img_name, x_min, y_max, class_name):
     lbl.show()
     return img, lbl
 
-drawBoundingBox('Lung_Dx-A0001#04-04-2007-Chest-07990#3.000000-5mm-41315#1-17', 220, 380, 'A')
+#draw_bounding_box('Lung_Dx-A0001#04-04-2007-Chest-07990#3.000000-5mm-41315#1-17', 220, 380, 'B')
