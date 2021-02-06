@@ -10,10 +10,10 @@ import cv2
 
 class ISIC_Data_Preparation:
     def __init__(self):
-        self.img_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples//Images//"
-        self.mask_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples//Masks//"
-        self.img_renamed_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples//Images_renamed//"
-        self.mask_renamed_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples//Masks_renamed//"
+        self.img_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//Data//ungLesion//"#"C://Users//AEZ//Documents//SDI//RoadCracks//samples//Images//"
+        self.mask_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//Data//LungLesion//Segmentation_label//"#"C://Users//AEZ//Documents//SDI//RoadCracks//samples//Masks//"
+        self.img_renamed_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples_all//Images_renamed//"
+        self.mask_renamed_dir = "C://Users//AEZ//Documents//SDI//RoadCracks//samples_all//Masks_renamed//"
         self.SPACE = 35
         self.UNIT_SCALE = True
 
